@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD424216210858DB004FE984 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424215210858DB004FE984 /* MasterViewController.swift */; };
+		AD424218210858F4004FE984 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424217210858F4004FE984 /* DetailViewController.swift */; };
+		AD42421B21085919004FE984 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42421A21085919004FE984 /* MapViewController.swift */; };
+		AD42421E2108594C004FE984 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42421D2108594C004FE984 /* NoteViewController.swift */; };
 		AD42E32B2105D7DB00A719A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E32A2105D7DB00A719A9 /* AppDelegate.swift */; };
 		AD42E32D2105D7DB00A719A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E32C2105D7DB00A719A9 /* ViewController.swift */; };
 		AD42E3302105D7DB00A719A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD42E32E2105D7DB00A719A9 /* Main.storyboard */; };
@@ -14,6 +18,8 @@
 		AD42E3352105D7DC00A719A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD42E3332105D7DC00A719A9 /* LaunchScreen.storyboard */; };
 		AD42E3402105D7DC00A719A9 /* LeisureMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E33F2105D7DC00A719A9 /* LeisureMapTests.swift */; };
 		AD42E34B2105D7DC00A719A9 /* LeisureMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E34A2105D7DC00A719A9 /* LeisureMapUITests.swift */; };
+		AD42E35C2105DC7F00A719A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E35B2105DC7F00A719A9 /* SplashViewController.swift */; };
+		AD42E35E2105DCD300A719A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E35D2105DCD300A719A9 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD424215210858DB004FE984 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		AD424217210858F4004FE984 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		AD42421A21085919004FE984 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AD42421D2108594C004FE984 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		AD42E3272105D7DB00A719A9 /* LeisureMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeisureMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD42E32A2105D7DB00A719A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD42E32C2105D7DB00A719A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		AD42E3462105D7DC00A719A9 /* LeisureMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeisureMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD42E34A2105D7DC00A719A9 /* LeisureMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeisureMapUITests.swift; sourceTree = "<group>"; };
 		AD42E34C2105D7DC00A719A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD42E35B2105DC7F00A719A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		AD42E35D2105DCD300A719A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD4242142108588D004FE984 /* MasterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AD424215210858DB004FE984 /* MasterViewController.swift */,
+				AD424217210858F4004FE984 /* DetailViewController.swift */,
+			);
+			path = MasterDetail;
+			sourceTree = "<group>";
+		};
+		AD424219210858FF004FE984 /* MapFlow */ = {
+			isa = PBXGroup;
+			children = (
+				AD42421A21085919004FE984 /* MapViewController.swift */,
+			);
+			path = MapFlow;
+			sourceTree = "<group>";
+		};
+		AD42421C21085925004FE984 /* NoteFlow */ = {
+			isa = PBXGroup;
+			children = (
+				AD42421D2108594C004FE984 /* NoteViewController.swift */,
+			);
+			path = NoteFlow;
+			sourceTree = "<group>";
+		};
 		AD42E31E2105D7DB00A719A9 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +134,17 @@
 		AD42E3292105D7DB00A719A9 /* LeisureMap */ = {
 			isa = PBXGroup;
 			children = (
+				AD42421C21085925004FE984 /* NoteFlow */,
+				AD424219210858FF004FE984 /* MapFlow */,
+				AD4242142108588D004FE984 /* MasterDetail */,
+				AD42E35A2105DB4700A719A9 /* LoginFlow */,
 				AD42E32A2105D7DB00A719A9 /* AppDelegate.swift */,
 				AD42E32C2105D7DB00A719A9 /* ViewController.swift */,
 				AD42E32E2105D7DB00A719A9 /* Main.storyboard */,
 				AD42E3312105D7DC00A719A9 /* Assets.xcassets */,
 				AD42E3332105D7DC00A719A9 /* LaunchScreen.storyboard */,
 				AD42E3362105D7DC00A719A9 /* Info.plist */,
+				AD42E35B2105DC7F00A719A9 /* SplashViewController.swift */,
 			);
 			path = LeisureMap;
 			sourceTree = "<group>";
@@ -123,6 +165,14 @@
 				AD42E34C2105D7DC00A719A9 /* Info.plist */,
 			);
 			path = LeisureMapUITests;
+			sourceTree = "<group>";
+		};
+		AD42E35A2105DB4700A719A9 /* LoginFlow */ = {
+			isa = PBXGroup;
+			children = (
+				AD42E35D2105DCD300A719A9 /* LoginViewController.swift */,
+			);
+			path = LoginFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD42421E2108594C004FE984 /* NoteViewController.swift in Sources */,
+				AD424216210858DB004FE984 /* MasterViewController.swift in Sources */,
+				AD42E35E2105DCD300A719A9 /* LoginViewController.swift in Sources */,
+				AD42E35C2105DC7F00A719A9 /* SplashViewController.swift in Sources */,
+				AD424218210858F4004FE984 /* DetailViewController.swift in Sources */,
 				AD42E32D2105D7DB00A719A9 /* ViewController.swift in Sources */,
 				AD42E32B2105D7DB00A719A9 /* AppDelegate.swift in Sources */,
+				AD42421B21085919004FE984 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
