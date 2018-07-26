@@ -35,31 +35,6 @@ class SplashViewController: UIViewController,AsyncResponseDelegate {
         self.requestWorker?.getResponse(from: from, tag: 1)
         
         
-//        let url = URL(string : from)!
-//        let request = URLRequest(url: url)
-//
-//        let config = URLSessionConfiguration.default
-//        let session = URLSession(configuration: config)
-//
-//        let task = session.dataTask(with: request, completionHandler:{ (data,response ,error ) in
-//
-//        let httpResponse = response  as! HTTPURLResponse
-//
-//        let statusCode = httpResponse.statusCode
-//
-//        if( 200 == statusCode){
-//                let dataString = NSString(data:data! ,  encoding :String.Encoding.utf8.rawValue)
-//                let responseString = String(dataString!)
-//
-//                print(responseString)
-//
-//            }
-//           // print("HERE")
-//
-//        })
-//
-//         task.resume()
-        
     }
 //
     

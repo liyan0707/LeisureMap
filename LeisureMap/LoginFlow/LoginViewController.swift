@@ -8,18 +8,60 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: UIViewController, UITextFieldDelegate, AsyncResponseDelegate {
+    
+    var requestWorker:AsyncRequestWorker?
 
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var userpsw: UITextField!
-    
     @IBOutlet var userbutton: [UIButton]!
+    
+    
+    @IBAction func login(_ sender: Any) {
+        
+        let account = username.text!
+        let password  = userpsw.text!
+        let from =  "https://score.azurewebsites.net/api/login/\(account)/\(password)"
+        self.requestWorker?.getResponse(from:from, tag: 1)
+        
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+        
+        requestWorker = AsyncRequestWorker()
+        requestWorker?.responseDelegate = self
+        print("123")
+        
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("viewwillAppear")
+    }
+    
+
+    
+    override  func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+         print("viewWilldisAppear")
+    }
+    
+    
+    override  func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("viewDiddisAppear")
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -66,6 +108,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     //shouldin
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        
         if textField.tag == 1 {
             
             textField.resignFirstResponder()
@@ -80,6 +124,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
+    
     //shouldre
+    func receviedReponse(_ sender: AsyncRequestWorker, responseString: String, tag: Int) {
+        print(responseString)
+    }
     
 }

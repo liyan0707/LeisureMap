@@ -24,6 +24,7 @@
 		AD42E34B2105D7DC00A719A9 /* LeisureMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E34A2105D7DC00A719A9 /* LeisureMapUITests.swift */; };
 		AD42E35C2105DC7F00A719A9 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E35B2105DC7F00A719A9 /* SplashViewController.swift */; };
 		AD42E35E2105DCD300A719A9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E35D2105DCD300A719A9 /* LoginViewController.swift */; };
+		AD741CB12109CF3D00F07C6C /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD741CB02109CF3D00F07C6C /* FileWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		AD42E34C2105D7DC00A719A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD42E35B2105DC7F00A719A9 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		AD42E35D2105DCD300A719A9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AD741CB02109CF3D00F07C6C /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
 		B5AAE701FB71252B884E2C68 /* Pods_LeisureMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeisureMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79D7A96734F7D04F9BFA3BB /* Pods_LeisureMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeisureMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD087C6305B68F33A263546A /* Pods-LeisureMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeisureMapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LeisureMapTests/Pods-LeisureMapTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				AD1D9BB62109617700DF30FB /* NetWorker.swift */,
+				AD741CB02109CF3D00F07C6C /* FileWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				AD42421E2108594C004FE984 /* NoteViewController.swift in Sources */,
 				AD424216210858DB004FE984 /* MasterViewController.swift in Sources */,
 				AD42E35E2105DCD300A719A9 /* LoginViewController.swift in Sources */,
+				AD741CB12109CF3D00F07C6C /* FileWorker.swift in Sources */,
 				AD42E35C2105DC7F00A719A9 /* SplashViewController.swift in Sources */,
 				AD424218210858F4004FE984 /* DetailViewController.swift in Sources */,
 				AD42E32D2105D7DB00A719A9 /* ViewController.swift in Sources */,
