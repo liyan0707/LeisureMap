@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class ServerCategory {
+class ServiceCategory {
     
     
     var Name : String?

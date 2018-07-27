@@ -13,7 +13,7 @@ protocol FileWorkerDelegate {
     func  fileWorkReadCompleted(_ sender:FileWork,content:String ,tag:Int)
     
 }
-class FileWork {
+class FileWork{
     var FileWorkerDelegate :FileWorkerDelegate?
     
     func writeToFile(content:String, fileName:String,tag:Int ){
