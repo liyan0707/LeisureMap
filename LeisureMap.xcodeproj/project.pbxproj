@@ -11,6 +11,7 @@
 		830484C4FA99728CBAFC4BDE /* Pods_LeisureMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79D7A96734F7D04F9BFA3BB /* Pods_LeisureMap.framework */; };
 		9C2D095759294AFB795C0C96 /* Pods_LeisureMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59D8F47D36DF299B655BAD7 /* Pods_LeisureMapUITests.framework */; };
 		AD1D9BB72109617700DF30FB /* NetWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1D9BB62109617700DF30FB /* NetWorker.swift */; };
+		AD286766210C534A0083E8CE /* abc.edu.gpx in Resources */ = {isa = PBXBuildFile; fileRef = AD286765210C534A0083E8CE /* abc.edu.gpx */; };
 		AD424216210858DB004FE984 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424215210858DB004FE984 /* MasterViewController.swift */; };
 		AD424218210858F4004FE984 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD424217210858F4004FE984 /* DetailViewController.swift */; };
 		AD42421B21085919004FE984 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42421A21085919004FE984 /* MapViewController.swift */; };
@@ -57,6 +58,7 @@
 		5F693C383525364F2E8A6AEE /* Pods-LeisureMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LeisureMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-LeisureMap/Pods-LeisureMap.release.xcconfig"; sourceTree = "<group>"; };
 		A59D8F47D36DF299B655BAD7 /* Pods_LeisureMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeisureMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1D9BB62109617700DF30FB /* NetWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorker.swift; sourceTree = "<group>"; };
+		AD286765210C534A0083E8CE /* abc.edu.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = abc.edu.gpx; path = ../../../abc.edu.gpx; sourceTree = "<group>"; };
 		AD424215210858DB004FE984 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		AD424217210858F4004FE984 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AD42421A21085919004FE984 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		AD42E31E2105D7DB00A719A9 = {
 			isa = PBXGroup;
 			children = (
+				AD286765210C534A0083E8CE /* abc.edu.gpx */,
 				AD42E3292105D7DB00A719A9 /* LeisureMap */,
 				AD42E33E2105D7DC00A719A9 /* LeisureMapTests */,
 				AD42E3492105D7DC00A719A9 /* LeisureMapUITests */,
@@ -368,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD286766210C534A0083E8CE /* abc.edu.gpx in Resources */,
 				AD42E3352105D7DC00A719A9 /* LaunchScreen.storyboard in Resources */,
 				AD42E3322105D7DC00A719A9 /* Assets.xcassets in Resources */,
 				AD42E3302105D7DB00A719A9 /* Main.storyboard in Resources */,
@@ -434,11 +438,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LeisureMap/Pods-LeisureMap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -661,7 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ADBG32J7L;
+				DEVELOPMENT_TEAM = Z247G8X22D;
 				INFOPLIST_FILE = LeisureMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -680,7 +690,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ADBG32J7L;
+				DEVELOPMENT_TEAM = Z247G8X22D;
 				INFOPLIST_FILE = LeisureMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
