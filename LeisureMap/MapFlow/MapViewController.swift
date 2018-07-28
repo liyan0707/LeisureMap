@@ -7,14 +7,28 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController ,CLLocationManagerDelegate , MKMapViewDelegate {
 
+    @IBOutlet weak var mapview: MKMapView!
+    let regionRadius : CLLocationDistance = 100
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        mapview.showsUserLocation = true
 
         // Do any additional setup after loading the view.
     }
+    
+    func  centerMapOnLocation(location : CLLocation){
+        let  coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,regionRadius , regionRadius )
+     
+        mapview.setRegion(coordinateRegion, animated: true)
+    }
+        
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
