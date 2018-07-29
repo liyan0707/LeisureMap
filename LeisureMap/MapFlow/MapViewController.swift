@@ -40,7 +40,43 @@ class MapViewController: UIViewController ,CLLocationManagerDelegate , MKMapView
         mapview.showsUserLocation = true
         
         //centerMapOnLocation
+        let flag = MapFlag(title: "ios app by swift", locationName: "abc", discipline: "apple room", coordinate: CLLocationCoordinate2D(latitude: 31.29065118, longitude: 118.3623587), url: "https://apple.com")
+        mapview.addAnnotation(flag)
 
+    }
+    
+    @objc func moveToWebView(sender : UIButton){
+        print("moveToWebView")
+    }
+    
+    //dituzuobiao
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        guard let annotation = annotation as? MapFlag else {
+            return nil
+        }
+        let identifier = "marker"
+        let annotationView :MKAnnotationView
+        
+        if let dequeueView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView{
+            dequeueView.annotation = annotation
+            annotationView = dequeueView
+            
+        }else{
+            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView.canShowCallout = true
+            annotationView.calloutOffset = CGPoint(x: -5, y: 5)
+            
+            let button  = UIButton(type: .detailDisclosure)
+            annotationView.rightCalloutAccessoryView = button
+            
+            button.addTarget(self, action: #selector(self.moveToWebView(sender:)), for: .touchUpInside)
+            
+        }
+        
+        return annotationView
+        
     }
     
     func  centerMapOnLocation(location : CLLocation){
